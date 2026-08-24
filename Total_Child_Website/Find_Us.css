@@ -1,0 +1,385 @@
+*{
+     padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+
+
+.Header{
+    display: flex;
+     align-items: center;
+    justify-content: space-between;
+    background-color: rgb(237, 247, 209);
+    padding: 10px;
+
+}
+
+.Links{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 70px;
+    cursor: pointer;
+    font-size: large;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: rgb(52, 87, 152);
+    margin-left: -50px;
+    font-size: 20px;
+    margin-right: 150px;
+}
+
+.Logo_Text{
+    color: rgb(52, 87, 152);
+    font-size: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding-left: -1000px;
+}
+
+.Header img{
+    width: 50px;
+    height: 50px;
+    padding-right: 0px;
+    margin-right: 0px;
+}
+
+.find-us-section {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 60px 20px;
+  font-family: system-ui, -apple-system, sans-serif;
+}
+.section-title {
+  text-align: center;
+  color: #1e4a9e;
+  font-size: 2rem;
+  margin-bottom: 40px;
+}
+.info-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+}
+.info-column h3 {
+  color: #333;
+  font-size: 1.25rem;
+  margin-bottom: 16px;
+}
+.contact-highlight {
+  margin-top: 12px;
+  color: #1e4a9e;
+}
+.social-row {
+  display: flex;
+  gap: 20px;
+}
+.social-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none;
+  color: rgb(33, 37, 41);
+  font-size: 0.85rem;
+}
+.social-item img {
+  width: 36px;
+  height: 36px;
+  margin-bottom: 6px;
+}
+
+/* Responsive fix: Stacks the columns on tablets and mobile screens */
+@media (max-width: 900px) {
+  .info-grid {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+}
+
+.join_us_section{
+    background-color: rgb(52, 87, 152);
+    
+
+
+
+  position: relative;       
+  isolation: isolate;       
+  padding: 40px;
+  color: rgb(52, 87, 152);
+  background-color: rgb(52, 87, 152) ;
+  padding-top: 100px;
+
+}
+
+
+
+.join_us_section::before {
+  content: "";               
+  position: absolute;
+  inset: 0;                  
+  z-index: -1;               
+  
+  /* Your background image settings */
+  background-image: url('Bible_img_for_web.jpg');
+  background-size: cover;
+  background-position: center;
+  
+  /* Control your transparency here (0.0 = invisible, 1.0 = solid) */
+  opacity: 0.4;              
+}
+
+.white{
+    font-weight: lighter;
+    color: white;
+
+}
+
+h1{
+    font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+.btn-primary {
+    width: 100%;
+    background-color: #345798; /* Your deep royal blue */
+    color: #ffffff;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-weight: 600;
+    font-size: 1rem;
+    padding: 14px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    margin-top: 10px;
+}
+
+.btn-primary:hover {
+    background-color: #264173; /* Slightly darker blue on hover */
+}
+
+.btn-secondary {
+    display: inline-block;
+    background-color: #ffffff;
+    color: #345798;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-weight: 600;
+    padding: 12px 24px;
+    border: 2px solid #345798;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: all 0.2s;
+}
+
+.btn-secondary:hover {
+    background-color: #345798;
+    color: #ffffff;
+}
+
+.contact-info img{
+    height: 400px;
+    width: 400px;
+
+}
+
+.community-highlight {
+  background-color: #f8f9fa; /* Gives it a clean, subtle background block */
+  padding: 60px 20px;
+}
+.community-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center; /* Centers text vertically next to the photo */
+  gap: 40px;
+}
+.community-text {
+  flex: 1;
+}
+.community-text h2 {
+  color: #1e4a9e;
+  font-size: 2rem;
+  margin-bottom: 16px;
+}
+.community-image {
+  flex: 1;
+}
+.community-image img {
+  width: 100%;
+  max-height: 450px;
+  object-fit: cover; /* Keeps the photo crisp without stretching it */
+  border-radius: 12px; /* Soft modern corners */
+  box-shadow: 0 8px 24px rgba(0,0,0,0.1); /* Elegant shadow */
+}
+
+/* Stacks them on mobile screens */
+@media (max-width: 768px) {
+  .community-container {
+    flex-direction: column;
+  }
+}
+
+
+.numbers_text{
+    color: rgb(52, 87, 152);
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    
+
+}
+
+.left_footer img{
+    width: 100px;
+    height: 100px;
+}
+
+.footer{
+    margin-top: 100px;
+    background-color:rgb(237, 247, 209) ;
+    display: flex;
+}
+
+
+.middle_footer{
+    margin-left: 300px;
+}
+
+
+.events{
+    padding-bottom: 15px;
+    margin-top: 10px;
+
+}
+
+.join_us{
+    padding-bottom: 15px;
+}
+
+.find_us{
+     padding-bottom: 7px;
+
+}
+
+.list_links{
+    font-family: 'Noto Sans', sans-serif;
+    color: rgb(52, 87, 152);
+    font-size: medium;
+    padding-top: 30px;
+}
+
+.overwrite{
+     font-family: 'Noto Sans', sans-serif;
+    color: rgb(52, 87, 152);
+    font-size: medium;
+
+}
+
+.underlined{
+    text-decoration: underline;
+}
+
+.right_footer{
+    margin-left: 350px;
+    margin-top: 25px;
+
+}
+.logos img{
+    height: 40px;
+    width: 40px;
+}
+
+.logos{
+    display: flex;
+    padding-top: 15px;
+}
+
+h2, h3, h4, h5, h6{
+    font-family: 'Noto Sans', sans-serif;
+    color: rgb(33, 37, 41);
+}
+
+.left_footer{
+    padding-left: 20px;
+}
+
+.black{
+    color: rgb(33, 37, 41);
+}
+
+.send_message{
+    background-color:  rgb(237, 247, 209);
+    border-radius: 7px;
+}
+
+.send_a_message{
+  padding: 18px;
+  margin-left: 2px;
+  background-color:rgb(237, 247, 209) ;
+  border-radius: 15px;
+  width: 55%;
+  margin-top: -320px;
+
+}
+
+.btn-send{
+  padding: 15px;
+  border-radius: 7px;
+  border:rgb(52, 87, 152) ;
+  border: 1px;
+  background-color: rgb(52, 87, 152);
+  color: white;
+  margin-top:20px ;
+}
+
+.message {
+    width: 600px;  /* Makes it wider */
+    height: 150px;  /* Makes it taller */
+    padding: 10px; /* Adds space inside the box */
+  }
+
+.form-group{
+  margin-top: 15px;
+}
+
+.form-container {
+  background-color: rgb(237, 247, 209); /* Your nice light green color */
+  padding: 25px;
+  border-radius: 8px;
+  max-width: 500px; /* Adjust this to match your design */
+}
+
+/* This makes every input label and box sit neatly on its own row */
+.form-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
+}
+
+/* This makes the labels bold and readable */
+.form-group label {
+  font-weight: bold;
+  margin-bottom: 5px;
+  font-family: sans-serif;
+}
+
+/* This makes all the input boxes the exact same width */
+.form-group input, 
+.form-group textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  box-sizing: border-box; /* Keeps padding inside the box width */
+}
+
+.community-text p{
+  font-family: 'Noto Sans', sans-serif;
+}
+
+.logo_link{
+    padding-left: 15px;
+}
+
+body{
+    background-color: #E6EEF4;
+
+}

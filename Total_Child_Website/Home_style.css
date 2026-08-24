@@ -1,0 +1,468 @@
+*{
+     padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    
+}
+
+
+
+.Header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgb(237, 247, 209);
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    z-index:1000 ;
+    
+
+}
+
+.Links{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 70px;
+    cursor: pointer;
+    font-size: large;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: rgb(52, 87, 152);
+    margin-left: -50px;
+    font-size: 20px;
+    margin-right: 150px;
+}
+
+.Logo_Text{
+    color: rgb(52, 87, 152);
+    font-size: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding-left: -1000px;
+}
+
+.Header img{
+    width: 50px;
+    height: 50px;
+    padding-right: 0px;
+    margin-right: 0px;
+}
+
+
+
+h1{
+    font-size: 50px;
+    color:rgb(33, 37, 41);
+    font-family:'Plus Jakarta Sans', sans-serif ;
+    font-weight: 1000;
+    
+}
+ 
+.Main_Body{
+    display: flex;
+    background-color: rgb(52, 87, 152)  ;
+    
+}
+
+@media (max-width:440px){
+    .Logo_Text{
+        font-size: 20px;
+    }
+    .Links{
+        display:none;
+    }
+}
+
+.Main_Slogan{
+
+    padding-top: 20px;
+    margin-left: 15px;
+   
+}
+
+.slogan_part{
+    color:rgb(52, 87, 152) ;
+    margin-left: 15px;
+}
+
+.inbetween {
+  position: relative;       
+  isolation: isolate;       
+  padding: 40px;
+  color:rgb(237, 247, 209);
+  background-color:rgb(237, 247, 209) ;
+  padding-top: 100px;
+  border-radius: 20px;
+}
+
+.inbetween::before {
+  content: "";               
+  position: absolute;
+  inset: 0;                  
+  z-index: -1;               
+  
+  /* Your background image settings */
+  background-image: url('Unsplash_Image_Kids.jpg');
+  background-size: cover;
+  background-position: center;
+  
+  /* Control your transparency here (0.0 = invisible, 1.0 = solid) */
+  opacity: 0.4;              
+}
+
+h2, h3, h4, h5, h6{
+    font-family: 'Noto Sans', sans-serif;
+    color: rgb(33, 37, 41);
+}
+
+.text-container-class {
+  background-color: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(8px);                  
+  -webkit-backdrop-filter: blur(8px);         
+  
+  padding: 20px;                              
+  border-radius: 8px;                         
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);  
+  
+  max-width: 800px;                            
+  margin-top: 30px;                           
+}
+
+p {
+  color: #1a1a1a;             
+  font-size: 16px;             
+  line-height: 1.6;            
+  letter-spacing: 0.2px;       
+  font-family: 'Noto Sans', sans-serif;
+  font-weight: bolder;
+}
+
+span.brand-inline {
+  color: #2b4c7e;             
+  font-weight: bold;
+  white-space: nowrap;        
+}
+
+.btn{
+    background-color: #E65F2B;
+  color: #FFFFFF;
+  font-weight: 700;
+  border: none;
+  border-radius: 10px;
+  font-size: 30px;
+}
+
+.btn {
+  background-color: #E65F2B;
+  color: white;
+  padding: 12px 28px;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 6px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  box-shadow: 0 4px 14px rgba(230, 95, 43, 0.4); 
+  transition: all 0.2s ease-in-out;
+}
+
+
+.btn:hover {
+  background-color: #D44E1C; /* Slightly darker shift */
+  transform: translateY(-1px);
+  box-shadow: 0 6px 20px rgba(230, 95, 43, 0.6);
+}
+
+.left_main_body{
+    background-color:  rgb(52, 87, 152) ;
+    color: #FFFFFF;
+    font-size: 20px;
+    font-weight: 800;
+    font-family: 'Noto Sans', sans-serif;
+    padding-left: 10px;
+
+}
+
+.white_text{
+    color: rgba(247, 241, 232, 0.893);
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 12px;
+
+}
+
+
+
+.below_inbetween{
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    color:rgb(52, 87, 152) ;
+    font-size: 50px;
+    margin-left: 35%;
+    padding: 25px;
+    margin-top: 75px;
+}
+
+
+
+.right_main_body img{
+    height: 70vh;
+    width: 80%;
+    border-radius: 25px;
+    /* opacity: 0.5; */
+    margin-left: 85px;
+}
+
+.bible_study{
+    color: #ffffff;
+    font-size: larger;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-weight: 800;
+    margin-bottom: 10px;
+    margin-top: 5px;
+    text-decoration:underline;
+}
+
+.invite_join{
+    background-color: rgb(237, 247, 209) ;
+    border-radius: 25px;
+    margin-left: 200px;
+    margin-right: 200px;
+    padding-top: 100px;
+    padding-left: 5px;
+    color: #E6EEF4;
+    margin-bottom: 50px;
+}
+.invite_join::after{
+     color: #E6EEF4;
+     background-color: #E6EEF4;;
+
+}
+body{
+    background-color: #E6EEF4;
+
+}
+
+.whiter_text{
+    font-size: 25px;
+    color: rgb(52, 87, 152);
+
+}
+
+.join_us_btn{
+    background-color:rgb(52, 87, 152) ;
+    border-radius: 25px;
+    padding: 20px;
+    margin-left: 350px;
+    border-color: rgb(52, 87, 152);
+    border: 1px;
+    margin-bottom: 30px;
+}
+
+.join_us_btn h2{
+    color: #FFFFFF;
+    font-size: large;
+}
+
+.join_us_btn:hover{
+    background-color:rgba(52, 87, 152, 0.849) ;
+    
+}
+
+
+.whitest_text{
+    color: #FFFFFF;
+    font-size: 30px;
+    font-weight: 450;
+}
+  
+
+.numbers_text{
+    color: rgb(52, 87, 152);
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    
+
+}
+
+.left_footer img{
+    width: 100px;
+    height: 100px;
+}
+
+.footer{
+    margin-top: 8px;
+    background-color:rgb(237, 247, 209) ;
+    display: flex;
+}
+
+
+.middle_footer{
+    margin-left: 300px;
+}
+
+
+.events{
+    padding-bottom: 15px;
+    margin-top: 10px;
+
+}
+
+.join_us{
+    padding-bottom: 15px;
+}
+
+.find_us{
+     padding-bottom: 7px;
+
+}
+
+.list_links{
+    font-family: 'Noto Sans', sans-serif;
+    color: rgb(52, 87, 152);
+    font-size: medium;
+    padding-top: 30px;
+}
+
+.overwrite{
+     font-family: 'Noto Sans', sans-serif;
+    color: rgb(52, 87, 152);
+    font-size: medium;
+
+}
+
+.underlined{
+    text-decoration: underline;
+}
+
+.right_footer{
+    margin-left: 350px;
+    margin-top: 25px;
+
+}
+.logos img{
+    height: 40px;
+    width: 40px;
+}
+
+.logos{
+    display: flex;
+    padding-top: 15px;
+}
+
+.left_footer{
+    padding-left: 20px;
+}
+
+.Main_Body{
+    border-radius: 12px;
+}
+
+
+.glaze{
+    background-color: rgb(52, 87, 152);
+    
+
+
+
+  position: relative;       
+  isolation: isolate;       
+  padding: 40px;
+  color: rgb(52, 87, 152);
+  background-color: rgb(52, 87, 152) ;
+  padding-top: 100px;
+
+}
+
+
+
+.glaze::before {
+  content: "";               
+  position: absolute;
+  inset: 0;                  
+  z-index: -1;               
+  
+  /* Your background image settings */
+  background-image: url('reviews_img_web.jpg');
+  background-size: cover;
+  background-position: center;
+  
+  /* Control your transparency here (0.0 = invisible, 1.0 = solid) */
+  opacity: 0.6;              
+}
+
+.quote_text{
+    font-weight: lighter;
+    color: white;
+    text-shadow: #1a1a1a;
+
+}
+.quote_text2{
+    font-weight: lighter;
+    color: white;
+    margin-left: 55%;
+    text-shadow: #1a1a1a;
+
+}
+
+.quoter{
+    font-weight: light;
+    color: white;
+    text-shadow: #1a1a1a;
+
+}
+.quoter2{
+    font-weight: light;
+    color: white;
+    margin-left: 80%;
+    text-shadow: #1a1a1a;
+
+}
+
+.invite_join{
+    padding-bottom: 15px;
+}
+
+/* Container holds the viewing window */
+.slider-container {
+  width: 800px;
+  height: 400px;
+  margin: 50px auto;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Track stretches to fit all slides (4 slides * 100% = 400%) */
+.slider-track {
+  display: flex;
+  width: 400%;
+  height: 100%;
+  animation: slideAnimation 16s infinite ease-in-out;
+}
+
+/* Each slide takes exactly the width of the container window */
+.slide {
+  width: 25%; /* 100% divided by 4 slides */
+  height: 100%;
+}
+
+.slide img {
+  width: 100%;
+  height: 99%;
+  object-fit: cover;
+}
+
+/* Animation logic for 4 slides (stays 20%, transitions 5%) */
+@keyframes slideAnimation {
+  0%, 20% { transform: translateX(0); }
+  25%, 45% { transform: translateX(-25%); }
+  50%, 70% { transform: translateX(-50%); }
+  75%, 95% { transform: translateX(-75%); }
+  100% { transform: translateX(0); }
+}
+
+.logo_link{
+    padding-left: 15px;
+}
+
+.gallery{
+    background-color: #E6EEF4;
+}

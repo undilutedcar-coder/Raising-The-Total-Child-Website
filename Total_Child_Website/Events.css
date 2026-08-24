@@ -1,0 +1,45 @@
+*{
+     padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+
+
+.Header{
+    display: flex;
+     align-items: center;
+    justify-content: space-between;
+    background-color: rgb(237, 247, 209);
+    padding: 10px;
+
+}
+
+.Links{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 70px;
+    cursor: pointer;
+    font-size: large;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: rgb(52, 87, 152);
+    margin-left: -50px;
+    font-size: 20px;
+    margin-right: 150px;
+}
+
+.Logo_Text{
+    color: rgb(52, 87, 152);
+    font-size: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding-left: -1000px;
+}
+
+.Header img{
+    width: 50px;
+    height: 50px;
+    padding-right: 0px;
+    margin-right: 0px;
+}

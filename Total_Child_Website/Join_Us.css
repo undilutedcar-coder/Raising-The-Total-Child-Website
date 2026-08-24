@@ -1,0 +1,247 @@
+*{
+     padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+
+
+.Header{
+    display: flex;
+     align-items: center;
+    justify-content: space-between;
+    background-color: rgb(237, 247, 209);
+    padding: 10px;
+
+}
+
+.Links{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 70px;
+    cursor: pointer;
+    font-size: large;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: rgb(52, 87, 152);
+    margin-left: -50px;
+    font-size: 20px;
+    margin-right: 150px;
+}
+
+.Logo_Text{
+    color: rgb(52, 87, 152);
+    font-size: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding-left: -1000px;
+}
+
+.Header img{
+    width: 50px;
+    height: 50px;
+    padding-right: 0px;
+    margin-right: 0px;
+}
+
+form{
+   display: flex;
+   align-items: center;
+   flex-direction: column;
+   background-color: rgb(237, 247, 209);
+   width: 50%;
+   margin: 0 auto;
+   color: rgb(33, 37, 41);
+}
+input{
+   padding: 20px;
+   margin-bottom: 20px;
+}
+
+
+/* Global Reset and Styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Noto Sans', sans-serif;
+    background-color: #f8f9fa; /* Crisp modern light background */
+    color: #212529; /* Easy to read charcoal body text */
+    padding: 40px 20px;
+}
+
+/* Flexbox Grid Setup to align items beautifully side-by-side */
+.page-container {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+/* Left Hero Section Styling */
+.hero-section {
+    flex: 1;
+    /* min-width: 300px; */
+}
+
+.hero-title {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-size: 3.5rem;
+    font-weight: 800;
+    color: #212529;
+    /* line-height: 1.1; */
+    margin-bottom: 15px;
+}
+
+.highlight-text {
+    color: #345798; /* Your deep royal blue */
+    display: block;
+}
+
+.hero-subtitle {
+    font-size: 1.15rem;
+    line-height: 1.6;
+    color: #495057;
+    margin-bottom: 25px;
+}
+
+/* Right Form Card Styling */
+.form-card {
+    flex: 1;
+    min-width: 320px;
+    max-width: 480px;
+    background-color: #EDF7D1; /* Your light green as the card accent color */
+    padding: 40px;
+    border-radius: 16px;
+    box-shadow: 0 10px 30px rgba(52, 87, 152, 0.08); /* Soft professional shadow */
+}
+
+.form-title {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-size: 2rem;
+    font-weight: 700;
+    color: #345798; /* Your deep royal blue */
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+/* Input Fields Formatting */
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    font-size: 0.9rem;
+    font-weight: 500;
+    margin-bottom: 8px;
+    color: #345798;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 12px 16px;
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 1rem;
+    border: 1px solid rgba(52, 87, 152, 0.2);
+    border-radius: 8px;
+    background-color: #ffffff;
+    color: #212529;
+    transition: all 0.2s ease;
+}
+
+/* Modern focus ring when a user clicks into a field */
+.form-group input:focus {
+    outline: none;
+    border-color: #345798;
+    box-shadow: 0 0 0 4px rgba(52, 87, 152, 0.15);
+}
+
+/* Button UI Components */
+.btn-primary {
+    width: 100%;
+    background-color: #345798; /* Your deep royal blue */
+    color: #ffffff;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-weight: 600;
+    font-size: 1rem;
+    padding: 14px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    margin-top: 10px;
+}
+
+.btn-primary:hover {
+    background-color: #264173; /* Slightly darker blue on hover */
+}
+
+.btn-secondary {
+    display: inline-block;
+    background-color: #ffffff;
+    color: #345798;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-weight: 600;
+    padding: 12px 24px;
+    border: 2px solid #345798;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: all 0.2s;
+}
+
+.btn-secondary:hover {
+    background-color: #345798;
+    color: #ffffff;
+}
+
+/* Responsive adjustment for small phones */
+@media (max-width: 768px) {
+    .Header
+    .hero-title { font-size: 2.5rem; }
+    .form-card { padding: 25px; }
+}
+
+.form-help-container {
+    text-align: center;
+    margin-top: 24px;
+    padding-top: 16px;
+    border-top: 1px solid rgba(52, 87, 152, 0.1); /* Subtle divider line */
+}
+
+/* Neutral help text */
+.form-help-text {
+    font-size: 0.875rem;
+    color: #495057; /* Soft gray-charcoal */
+    font-family: 'Noto Sans', sans-serif;
+}
+
+/* Interactive link using your deep blue */
+.form-help-link {
+    color: #345798; /* Your deep royal blue */
+    font-weight: 500;
+    text-decoration: underline;
+    text-underline-offset: 3px; /* Clean spacing under the underline */
+    transition: color 0.2s ease;
+}
+
+/* Soft color change when hovered */
+.form-help-link:hover {
+    color: #264173; /* Darker blue on hover */
+    text-decoration: none; /* Removes underline on hover for a modern feel */
+}
+
+.logo_link{
+    padding-left: 15px;
+}
+body{
+    background-color: #E6EEF4;
+
+}
